@@ -5,6 +5,9 @@ import morgan from 'morgan'
 import cors from 'cors'
 import { connect } from './utils/db'
 import itemRouter from './resources/item/item.router'
+import listRouter from './resources/list/list.router'
+import { signup, signin, protect } from './utils/auth'
+
 
 export const app = express()
 
@@ -15,7 +18,11 @@ app.use(cors())
 app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
+app.use('/api', protect)
 
+
+app.post('/signup', signup)
+app.post('/signin', signin)
 app.use('/api/user', userRouter)
 app.use('/api/item', itemRouter)
 
