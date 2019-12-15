@@ -1,19 +1,20 @@
+/* eslint-disable prettier/prettier */
 import { Router } from 'express'
-import controllers from './item.controllers'
 
 const router = Router()
+const mockController = (req, res) => {
+    res.send({ message: "Hello" })
+}
 
-// /api/item
 router
-  .route('/')
-  .get(controllers.getOne)
-  .post(controllers.createOne)
+    .route('/')
+    .get(mockController)
+    .post(mockController)
 
-// /api/item/:id
 router
-  .route('/:id')
-  .get(controllers.getOne)
-  .put(controllers.updateOne)
-  .delete(controllers.removeOne)
+    .route('/:id')
+    .get(mockController)
+    .put(mockController)
+    .delete(mockController)
 
 export default router

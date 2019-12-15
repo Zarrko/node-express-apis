@@ -87,5 +87,10 @@ In this exercise you'll be locking down our API using JWT's.
 - [x] create a protect middlware to lock down API routes
 - [x] ensure all tests pass by running test command
 
+
 ### Running App
 - `yarn dev`
+
+### Testing
+The other resources don't have any test, go ahead and write some!
+
