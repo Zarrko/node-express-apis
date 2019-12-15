@@ -4,7 +4,7 @@
 - [Resources](#resources)
 - [Requirements](#requirements)
 - [Course](#course)
-- [Exercises](#excercises)
+- [Exercises](#exercises)
   - [Hello world Express](#hello-world-express)
   - [Routing](#routing)
   - [Create Schemas](#create-schemas)
@@ -28,7 +28,6 @@ The following are suggested to be installed on your machine before beginning the
 * [Nodemon](https://nodemon.io/)
 
 ## Course
-
 This course has two parts, slides and exercises. The slides describe the exerices in detail. Each exercise has a starting branch and solution branch. Example `lesson-1` and `lesson-1-solution`.
 ## Exercises
 ** Important: Please check out to each exercise branch as the course progresses. 
