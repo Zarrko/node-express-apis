@@ -5,12 +5,12 @@ import controllers from './item.controllers'
 const router = Router()
 
 router
-    .route('/item')
+    .route('/')
     .get(controllers.getOne)
     .post(controllers.createOne)
 
 router
-    .route('/item/:id')
+    .route('/:id')
     .get(controllers.getOne)
     .put(controllers.updateOne)
     .delete(controllers.removeOne)
