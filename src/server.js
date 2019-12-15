@@ -2,7 +2,6 @@
 import express from 'express'
 import { json, urlencoded } from 'body-parser'
 import morgan from 'morgan'
-import config from './config'
 import cors from 'cors'
 import { connect } from './utils/db'
 import itemRouter from './resources/item/item.router'
@@ -11,6 +10,7 @@ export const app = express()
 
 app.disable('x-powered-by')
 
+// Middleware
 app.use(cors())
 app.use(json())
 app.use(urlencoded({ extended: true }))
